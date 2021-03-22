@@ -1,7 +1,3 @@
-#CATAL[ii]ST First Github Project
-
-#Switching from Perl to Python
-
-#Using Github first time
-
-#Let's Go
+#Welcome to CATAL[ii]ST
+#Python3 
+#This file tell you about the programs (gonna be listed/created in this directory) in one line.
