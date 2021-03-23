@@ -2,6 +2,7 @@ movies =[
     "The Holy Grail", 1975, "Terry Jones & Terry Gilliam", 91, ["Graham Chapman", ["Michael Palin", "John Cleese", "Terry Gilliam", "Eric Idle", "Terry Jones"]]
 ]
 
+"""
 for each in movies:
     if isinstance(each,list):
         for inner_each in each:
@@ -12,6 +13,14 @@ for each in movies:
                 print(inner_each)        
     else:
         print(each)        
+"""
+
+def nested(the_list):
+    for each in the_list:
+        if isinstance(each,list):
+            nested(each)
+        else:
+            print(each) 
 
 
-#print(movies)
+print(nested(movies))
