@@ -1,21 +1,37 @@
 import os
+import cataliistNester
 
 os.getcwd()
 os.chdir('data')
 os.getcwd()
 
+man=[]
+other =[]
+
 try:
-    data = open("sketch.txt")
+    with open("sketch_r1.txt") as data:
+        for each in data:
+            try:
+                (role, dialog) = each.split(':',1)
+                dialog = dialog.strip()
+                
+                if role=='Man':
+                    man.append(dialog)
+                elif role == 'Other Man':
+                    other.append(dialog)    
 
-    for each in data:
-        try:
-            (role, dialog) = each.split(':')
-            print(role,end='')
-            print(" said: ",end='')
-            print(dialog,end='')
-        except ValueError:
-            pass
+            except ValueError:
+                pass
+        
+except IOError as err:
+    print("File Error" + str(err))
 
-    data.close()        
-except IOError:
-    print("The input file is missing!")
+try:
+    with open("man_dialog.txt","w") as man_data:
+        cataliistNester.nested(man,fh=man_data)    
+
+    with open("other_dialog.txt","w") as other_data:
+        cataliistNester.nested(other,fh=other_data)
+    
+except IOError as err:
+    print("File Error" + str(err)) 
