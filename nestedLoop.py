@@ -16,4 +16,4 @@ for each in movies:
         print(each)        
 """
 
-print(cataliistNester.nested(movies))
+print(cataliistNester.nested(movies,True))

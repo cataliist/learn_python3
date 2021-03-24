@@ -11,11 +11,11 @@ Output:
 Prints each item recursively on each line with defined indent
 """
 
-def nested(the_list,indent=0):
+def nested(the_list,indent=False, level=0):
     for each in the_list:
         if isinstance(each,list):
-            nested(each,indent+1)
+            nested(each,indent,level+1)
         else:
-            for tab in range(indent):
-                print("\t",end='')
+            if indent:
+                print("\t"*level,end='')
             print(each)
