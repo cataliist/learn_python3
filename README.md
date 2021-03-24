@@ -7,3 +7,5 @@
 #firstScript.py [The very first python script]
 
 #nestedLoop.py [Print the nested list data structure]
+
+#fileHandler.py [To handle files and exceptions]
