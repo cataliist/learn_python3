@@ -2,9 +2,9 @@ from distutils.core import setup
 
 setup(
 
-    name            = 'nesterii',
-    version         = '1.0.0',
-    py_modules      = ['nesterii'],
+    name            = 'cataliistNester',
+    version         = '1.1.0',
+    py_modules      = ['cataliistNester'],
     author          = 'cataliist',
     author_email    = 'cataliistceo@gmail.com',
     url             = 'http://www.cataliist.com',

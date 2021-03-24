@@ -1,3 +1,4 @@
+import cataliistNester
 movies =[
     "The Holy Grail", 1975, "Terry Jones & Terry Gilliam", 91, ["Graham Chapman", ["Michael Palin", "John Cleese", "Terry Gilliam", "Eric Idle", "Terry Jones"]]
 ]
@@ -15,12 +16,4 @@ for each in movies:
         print(each)        
 """
 
-def nested(the_list):
-    for each in the_list:
-        if isinstance(each,list):
-            nested(each)
-        else:
-            print(each) 
-
-
-print(nested(movies))
+print(cataliistNester.nested(movies))
