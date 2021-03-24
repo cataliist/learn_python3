@@ -6,4 +6,4 @@
 
 #firstScript.py [The very first python script]
 
-#nestedLoop.py [The nested list data structure]
+#nestedLoop.py [Print the nested list data structure]
