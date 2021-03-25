@@ -1,4 +1,8 @@
 import os
+import cataliistSanitizer
+import cataliistFilePicker
+
+
 
 
 os.chdir('data/coach_kelly')
@@ -7,62 +11,55 @@ julie=[]
 james=[]
 sarah=[]
 mikey=[]
-cjulie=[]
-cjames=[]
-csarah=[]
-cmikey=[]
-
 
 try:
-    with open("julie.txt") as julief:
-        data = julief.readline()
-        julie = data.strip().split(',')
-        
-
-    with open("james.txt") as jamesf:
-        data = jamesf.readline()
-        james = data.strip().split(',')
-
-    with open("mikey.txt") as mikeyf:
-        data = mikeyf.readline()
-        mikey = data.strip().split(',')  
-
-    with open("sarah.txt") as sarahf:
-        data = sarahf.readline()
-        sarah = data.strip().split(',')
-
+    julie = cataliistFilePicker.filePicker("julie.txt")
+    james = cataliistFilePicker.filePicker("james.txt")
+    mikey = cataliistFilePicker.filePicker("mikey.txt")
+    sarah = cataliistFilePicker.filePicker("sarah.txt")
+    
 except IOError as err:
     print("File Error" +str(err))        
 
 
-def sanitize(time_string):
-    if '-' in time_string:
-        splitter = '-'
-    elif ':' in time_string:
-        splitter = ':'
-    else:
-        return(time_string)
-    
-
-    (min,sec) = time_string.split(splitter)
-    return(min + '.' + sec)
 
 
+print(sorted(set([cataliistSanitizer.sanitize(each) for each in julie]))[0:3])
+print(sorted(set([cataliistSanitizer.sanitize(each) for each in james]))[0:3])
+print(sorted(set([cataliistSanitizer.sanitize(each) for each in mikey]))[0:3])
+print(sorted(set([cataliistSanitizer.sanitize(each) for each in sarah]))[0:3])
 
+
+"""
+julie = sorted([sanitize(each) for each in julie])
+james = sorted([sanitize(each) for each in james])
+mikey = sorted([sanitize(each) for each in mikey])
+sarah = sorted([sanitize(each) for each in sarah])
+
+unique_julie=[]
+unique_james=[]
+unique_mikey=[]
+unique_sarah=[]
 
 for each in julie:
-    cjulie.append(sanitize(each))
+    if each not in unique_julie:
+        unique_julie.append(each)
 
 for each in james:
-    cjames.append(sanitize(each))
+    if each not in unique_james:
+        unique_james.append(each)
 
 for each in mikey:
-    cmikey.append(sanitize(each))
+    if each not in unique_mikey:
+        unique_mikey.append(each)
 
 for each in sarah:
-    csarah.append(sanitize(each))
+    if each not in unique_sarah:
+        unique_sarah.append(each)
 
-print(sorted(cjulie))
-print(sorted(cjames))
-print(sorted(cmikey))
-print(sorted(csarah))
+print(unique_julie[0:3])
+print(unique_james[0:3])
+print(unique_mikey[0:3])
+print(unique_sarah[0:3])
+"""
+
