@@ -3,7 +3,7 @@ from distutils.core import setup
 setup(
 
     name            = 'cataliistFilePicker',
-    version         = '1.0.0',
+    version         = '1.1.0',
     py_modules      = ['cataliistFilePicker'],
     author          = 'cataliist',
     author_email    = 'cataliistceo@gmail.com',
