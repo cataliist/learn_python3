@@ -1,3 +1,7 @@
+"""
+Disclaimer: Most common functions are demostrated
+"""
+
 #Assign a string value to a variable
 myString = "This is cataliister speaking, I am pushing python tutorial to github using a feature branch 'python in one day'."
 
@@ -72,3 +76,4 @@ print(myConcatenatedString.upper())
 
 #Convert string to all lower case
 print(myConcatenatedString.lower())
+

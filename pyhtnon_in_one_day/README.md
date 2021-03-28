@@ -58,7 +58,8 @@ You can open the scripts in your text editor to read or run using below command 
 $ python3 playWithPython.py
 
 
-playWithStrings.py
+playWithStrings.py:         higly used functions has been demonstrate to manipulate string
+playWithTypeCasting.py      functions to convert one type of variable to another one
 
 
 
