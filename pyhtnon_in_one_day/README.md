@@ -58,8 +58,9 @@ You can open the scripts in your text editor to read or run using below command 
 $ python3 playWithPython.py
 
 
-playWithStrings.py:         higly used functions has been demonstrate to manipulate string
+playWithStrings.py:         higly used functions have been demonstrate to manipulate string
 playWithTypeCasting.py      functions to convert one type of variable to another one
+playWithList.py             functions have been demonstrated to manipulate list
 
 
 
