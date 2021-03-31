@@ -1,6 +1,5 @@
 Charlie,120
-Mark,140
+Mark,0
 Gates,180
 Jobs,170
 Musk,190
-Cataliister,40
