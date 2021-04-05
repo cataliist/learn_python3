@@ -53,14 +53,39 @@ There are several other variables according to the datatype they store (will com
 
 FROM THIS POINT WE WILL NOT EXPLAIN THE THINGS BUT SHOW YOU BY CREATING INDIVIDUAL FILES (python scripts with extention .py)
 ----------------------------------------------------------------------------------------------------------------------------
-You can open the scripts in your text editor to read or run using below command in the terminal:
+You can open the scripts in your text editor to read or run using below command in the terminal for e.g.:
 
 $ python3 playWithPython.py
 
 
-playWithStrings.py:         higly used functions have been demonstrate to manipulate string
-playWithTypeCasting.py      functions to convert one type of variable to another one
-playWithList.py             functions have been demonstrated to manipulate list
+playWithStrings.py:             higly used functions have been demonstrate to manipulate string
+playWithTypeCasting.py          functions to convert one type of variable to another one
+playWithList.py                 functions have been demonstrated to manipulate list
+playWithDict.py                 demonstrated dictionary and functions 
+playWithConditionStatements.py  Type of condition statements
+playWithException.py            Exception handling using try and exception
+playWithIfElse.py               If elif and else 
+playWithLoop.py                 for and while loop
+playWithInputAndOutput.py       Input and output handling
+playWithFileHandling.py         External file handling
+playWithFunction.py             Defining functions
+playWithModule.py               Creating and using modules
+modules/prime.py                Define function to check entered number is prime or not
+
+Math Game as a project
+----------------------
+modules/myPythonFunctions.py    defined functions to create and update user and  user
+                                score and mathematical equation to solve 
+mathGame.py                     Call defined functions to interact with user
+
+
+
+*********************
+Advance Python Skills
+---------------------
+
+
+
 
 
 
